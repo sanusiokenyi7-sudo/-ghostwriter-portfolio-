@@ -1,0 +1,857 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inks | Ghostwriter for Founders</title>
+
+  <meta
+    name="description"
+    content="Founder-focused ghostwriting. I turn experience, ideas and observations into writing people remember."
+  >
+
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --text: #151515;
+      --muted: #66615a;
+      --line: #dedad2;
+      --accent: #171717;
+      --soft: #ece8df;
+      --max: 1120px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 245, 240, 0.94);
+      backdrop-filter: blur(12px);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-family: Arial, sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 0.86rem;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-cta {
+      background: var(--accent);
+      color: white !important;
+      padding: 10px 17px;
+      border-radius: 999px;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.7fr;
+      gap: 70px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(3.5rem, 8vw, 7.5rem);
+      line-height: 0.92;
+      letter-spacing: -0.065em;
+      font-weight: 500;
+      max-width: 900px;
+    }
+
+    .hero-description {
+      margin-top: 34px;
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      max-width: 700px;
+      color: var(--muted);
+    }
+
+    .hero-buttons {
+      margin-top: 38px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-family: Arial, sans-serif;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .hero-note {
+      border-left: 1px solid var(--text);
+      padding-left: 22px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* Sections */
+
+    section {
+      padding: 110px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 0.5fr 1.5fr;
+      gap: 50px;
+      margin-bottom: 65px;
+    }
+
+    .section-number {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    h2 {
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      font-weight: 500;
+      max-width: 850px;
+    }
+
+    .intro {
+      margin-top: 25px;
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+    }
+
+    .about-text {
+      font-size: 1.25rem;
+    }
+
+    .about-text p + p {
+      margin-top: 25px;
+    }
+
+    .principles {
+      border-top: 1px solid var(--line);
+    }
+
+    .principle {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .principle strong {
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .principle span {
+      color: var(--muted);
+      text-align: right;
+      max-width: 300px;
+    }
+
+    /* Services */
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .service {
+      padding: 34px;
+      min-height: 280px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .service-number {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .service h3 {
+      margin-top: 55px;
+      font-size: 1.65rem;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .service p {
+      margin-top: 18px;
+      color: var(--muted);
+    }
+
+    /* Work */
+
+    .work-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .work {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 0.25fr 1fr 0.5fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .work-number {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .work h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    .work p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Process */
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .process-step {
+      padding: 30px;
+      min-height: 230px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .process-step span {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .process-step h3 {
+      margin-top: 50px;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .process-step p {
+      margin-top: 14px;
+      color: var(--muted);
+    }
+
+    /* CTA */
+
+    .contact {
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin: auto;
+      max-width: 950px;
+    }
+
+    .contact p {
+      margin: 30px auto;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 1.2rem;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Footer */
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 30px 0;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 800px) {
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 80px 0 100px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .section-heading {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      h1 {
+        font-size: clamp(3.3rem, 17vw, 5.5rem);
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      .services,
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .work {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .work h3 {
+        font-size: 1.6rem;
+      }
+
+      .work p {
+        text-align: left;
+      }
+
+      .principle {
+        display: block;
+      }
+
+      .principle span {
+        display: block;
+        text-align: left;
+        margin-top: 8px;
+      }
+
+      .contact {
+        padding: 100px 0;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">INKS.</a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#contact" class="nav-cta">Let's Talk</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div>
+            <div class="eyebrow">Founder-Focused Ghostwriter</div>
+
+            <h1>
+              The voice behind the vision.
+            </h1>
+
+            <p class="hero-description">
+              I turn experience, ideas and observations into writing
+              people remember.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="button">Work With Me</a>
+              <a href="#work" class="button secondary">See Selected Work</a>
+            </div>
+          </div>
+
+          <div class="hero-note">
+            Founders have stories worth telling.
+            My job is to find the words that make those stories
+            sound unmistakably like them.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About -->
+
+    <section id="about">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-number">01 / ABOUT</div>
+
+          <div>
+            <h2>
+              Your ideas are valuable. Your voice should be unforgettable.
+            </h2>
+
+            <p class="intro">
+              Great founder writing isn't about sounding impressive.
+              It's about sounding real, clear and worth listening to.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-text">
+            <p>
+              I work with founders and ambitious professionals who have
+              something meaningful to say—but don't always have the time
+              to turn their thinking into consistent, compelling writing.
+            </p>
+
+            <p>
+              I listen for the stories, beliefs, lessons and observations
+              underneath the surface. Then I turn them into writing that
+              feels natural, thoughtful and distinctly yours.
+            </p>
+          </div>
+
+          <div class="principles">
+
+            <div class="principle">
+              <strong>VOICE</strong>
+              <span>
+                Your personality comes first. The writing should sound
+                like you—not like a ghostwriter.
+              </span>
+            </div>
+
+            <div class="principle">
+              <strong>CLARITY</strong>
+              <span>
+                Complex ideas become simple without becoming shallow.
+              </span>
+            </div>
+
+            <div class="principle">
+              <strong>STORY</strong>
+              <span>
+                Facts become memorable when there is a human story behind them.
+              </span>
+            </div>
+
+            <div class="principle">
+              <strong>CONSISTENCY</strong>
+              <span>
+                Your ideas deserve to be heard regularly, not occasionally.
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Services -->
+
+    <section id="services">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-number">02 / SERVICES</div>
+
+          <div>
+            <h2>
+              Writing built around the person behind the business.
+            </h2>
+
+            <p class="intro">
+              From one powerful idea to an entire thought-leadership
+              presence, I help turn your thinking into words.
+            </p>
+          </div>
+        </div>
+
+        <div class="services">
+
+          <article class="service">
+            <div class="service-number">01</div>
+            <h3>Founder Ghostwriting</h3>
+            <p>
+              Posts, essays and perspectives written in your voice
+              and shaped around your experience.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">02</div>
+            <h3>Thought Leadership</h3>
+            <p>
+              Turn your expertise and opinions into ideas that
+              establish authority and start conversations.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">03</div>
+            <h3>Personal Brand Writing</h3>
+            <p>
+              Build a recognizable written identity across your
+              professional presence.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">04</div>
+            <h3>LinkedIn Writing</h3>
+            <p>
+              Strategic LinkedIn content designed to communicate
+              your thinking without losing your personality.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">05</div>
+            <h3>Essays & Long-Form</h3>
+            <p>
+              Deeper pieces that explore experiences, lessons,
+              beliefs and ideas with substance.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-number">06</div>
+            <h3>Content Strategy</h3>
+            <p>
+              A clear system for deciding what you should say,
+              why it matters and how to say it.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Selected Work -->
+
+    <section id="work">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-number">03 / SELECTED WORK</div>
+
+          <div>
+            <h2>
+              Ideas become valuable when people remember them.
+            </h2>
+
+            <p class="intro">
+              A selection of writing formats I can develop for founders,
+              leaders and ambitious professionals.
+            </p>
+          </div>
+        </div>
+
+        <div class="work-list">
+
+          <article class="work">
+            <div class="work-number">01</div>
+            <div>
+              <h3>The Founder Story</h3>
+            </div>
+            <p>
+              Turning a personal experience into a powerful professional lesson.
+            </p>
+          </article>
+
+          <article class="work">
+            <div class="work-number">02</div>
+            <div>
+              <h3>The Unpopular Opinion</h3>
+            </div>
+            <p>
+              Challenging an accepted idea with a clear, thoughtful argument.
+            </p>
+          </article>
+
+          <article class="work">
+            <div class="work-number">03</div>
+            <div>
+              <h3>The Hard Lesson</h3>
+            </div>
+            <p>
+              Transforming failure, uncertainty or mistakes into useful insight.
+            </p>
+          </article>
+
+          <article class="work">
+            <div class="work-number">04</div>
+            <div>
+              <h3>The Observation</h3>
+            </div>
+            <p>
+              Finding meaning in an everyday moment and connecting it
+              to a larger idea.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Process -->
+
+    <section id="process">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-number">04 / PROCESS</div>
+
+          <div>
+            <h2>
+              Your thoughts first. The writing comes second.
+            </h2>
+
+            <p class="intro">
+              Ghostwriting works when the writer understands the person,
+              not just the topic.
+            </p>
+          </div>
+        </div>
+
+        <div class="process">
+
+          <article class="process-step">
+            <span>01</span>
+            <h3>Listen</h3>
+            <p>
+              We uncover your experiences, beliefs, stories and ideas.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span>02</span>
+            <h3>Discover</h3>
+            <p>
+              We identify the ideas worth turning into memorable content.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span>03</span>
+            <h3>Write</h3>
+            <p>
+              I shape those ideas into clear writing that sounds like you.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span>04</span>
+            <h3>Refine</h3>
+            <p>
+              We refine the voice, message and details until it feels right.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="eyebrow">05 / LET'S WORK TOGETHER</div>
+
+        <h2>
+          You have the experience.
+          Let's give it a voice.
+        </h2>
+
+        <p>
+          If you're a founder or professional with ideas worth sharing,
+          let's turn them into writing people want to read.
+        </p>
+
+        <div class="contact-links">
+
+          <!-- Replace these links with your real details -->
+
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener"
+            class="button"
+          >
+            Connect on LinkedIn
+          </a>
+
+          <a
+            href="mailto:your@email.com"
+            class="button secondary"
+          >
+            Email Me
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span>© 2026 INKS. All rights reserved.</span>
+        <span>Ghostwriter for Founders</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+```
+  
