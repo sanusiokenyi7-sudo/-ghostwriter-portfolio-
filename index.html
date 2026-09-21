@@ -1,1954 +1,1389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="portfolio-build" content="single-file-pdf-embedded">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta
-  name="description"
-  content="Sanusi Okenyi — LinkedIn ghostwriter and content strategist creating human, persuasive thought leadership, business writing, social content and short-form scripts."
->
-
-<meta name="theme-color" content="#07111f">
-<meta name="robots" content="index,follow">
-
-<link
-  rel="canonical"
-  href="https://sanusiokenyi7-sudo.github.io/-ghostwriter-portfolio-/"
->
-
-<meta property="og:type" content="website">
-<meta
-  property="og:title"
-  content="Sanusi Okenyi | LinkedIn Ghostwriter & Content Strategist"
->
-<meta
-  property="og:description"
-  content="Thought leadership, ghostwriting, business writing, content strategy and conversion-focused messaging."
->
-<meta
-  property="og:url"
-  content="https://sanusiokenyi7-sudo.github.io/-ghostwriter-portfolio-/"
->
-
-<title>Sanusi Okenyi | LinkedIn Ghostwriter & Content Strategist</title>
-
-<style>
-:root{
-  --ink:#172033;
-  --muted:#667085;
-  --paper:#fff;
-  --soft:#f7f8fc;
-  --line:#e7eaf1;
-  --blue:#13263a;
-  --green:#22a06b;
-  --dark:#0d1b2a;
-  --shadow:0 18px 55px rgba(28,34,56,.10);
-}
-
-*{
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  margin:0;
-  color:var(--ink);
-  background:#f6f7f9;
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,
-    BlinkMacSystemFont,"Segoe UI",sans-serif;
-  line-height:1.6;
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-.container{
-  width:min(1120px,92%);
-  margin:auto;
-}
-
-/* NAVIGATION */
-
-.nav{
-  position:sticky;
-  top:0;
-  z-index:50;
-  background:rgba(255,255,255,.88);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(231,234,241,.85);
-}
-
-.nav-inner{
-  height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-weight:900;
-  letter-spacing:-.6px;
-  font-size:20px;
-}
-
-.logo span{
-  color:#927438;
-}
-
-.nav-links{
-  display:flex;
-  gap:22px;
-  align-items:center;
-  font-size:14px;
-  font-weight:700;
-  color:#596276;
-}
-
-.nav-links a:hover{
-  color:#927438;
-}
-
-.nav-cta{
-  padding:10px 16px;
-  border-radius:999px;
-  color:#fff;
-  background:var(--dark);
-  box-shadow:0 8px 22px rgba(21,24,39,.16);
-}
-
-/* HERO */
-
-.hero{
-  padding:86px 0 70px;
-  position:relative;
-  overflow:hidden;
-  background:
-    radial-gradient(
-      circle at 85% 15%,
-      rgba(233,79,159,.18),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 15% 5%,
-      rgba(40,120,255,.16),
-      transparent 30%
-    ),
-    linear-gradient(180deg,#fff 0%,#faf9ff 100%);
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.18fr .82fr;
-  gap:55px;
-  align-items:center;
-}
-
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:7px 12px;
-  border-radius:999px;
-  background:#f5ecd9;
-  color:#735b28;
-  font-size:12px;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:.7px;
-}
-
-.dot{
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:var(--green);
-}
-
-h1{
-  font-size:clamp(42px,6vw,72px);
-  line-height:1.02;
-  letter-spacing:-3.5px;
-  margin:18px 0;
-}
-
-.gradient-text{
-  background:linear-gradient(90deg,#c9a45c,#8f6d2d);
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-}
-
-.hero-copy{
-  font-size:18px;
-  color:var(--muted);
-  max-width:680px;
-}
-
-.hero-actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:28px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:13px 19px;
-  border-radius:13px;
-  font-weight:850;
-  font-size:14px;
-}
-
-.btn-main{
-  background:#0d1b2a;
-  color:#fff;
-  box-shadow:0 12px 28px rgba(109,69,255,.25);
-}
-
-.btn-light{
-  background:#fff;
-  border:1px solid var(--line);
-}
-
-.hero-card{
-  background:var(--dark);
-  color:#fff;
-  border-radius:30px;
-  padding:30px;
-  box-shadow:var(--shadow);
-  position:relative;
-  overflow:hidden;
-}
-
-.hero-card:before,
-.hero-card:after{
-  content:"";
-  position:absolute;
-  border-radius:50%;
-  filter:blur(2px);
-}
-
-.hero-card:before{
-  width:180px;
-  height:180px;
-  background:rgba(109,69,255,.55);
-  right:-80px;
-  top:-70px;
-}
-
-.hero-card:after{
-  width:140px;
-  height:140px;
-  background:rgba(233,79,159,.35);
-  left:-80px;
-  bottom:-80px;
-}
-
-.hero-card>*{
-  position:relative;
-  z-index:1;
-}
-
-.hero-card h3{
-  font-size:25px;
-  margin:0 0 8px;
-}
-
-.hero-card p{
-  color:#c9cede;
-  margin:0 0 22px;
-}
-
-.pills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-}
-
-.pill{
-  padding:7px 10px;
-  border:1px solid rgba(255,255,255,.15);
-  background:rgba(255,255,255,.07);
-  border-radius:999px;
-  font-size:12px;
-  color:#eef0f7;
-}
-
-/* GENERAL SECTIONS */
-
-section{
-  padding:82px 0;
-  position:relative;
-}
-
-section:after{
-  content:"";
-  position:absolute;
-  left:5%;
-  right:5%;
-  bottom:0;
-  height:1px;
-  background:linear-gradient(
-    90deg,
-    transparent,
-    rgba(214,177,94,.22),
-    transparent
-  );
-  opacity:.65;
-}
-
-.section-head{
-  max-width:720px;
-  margin-bottom:34px;
-}
-
-.kicker{
-  font-size:12px;
-  font-weight:900;
-  color:#927438;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-
-h2{
-  font-size:clamp(30px,4vw,45px);
-  line-height:1.08;
-  letter-spacing:-1.7px;
-  margin:8px 0 12px;
-}
-
-.section-head p{
-  color:var(--muted);
-  margin:0;
-}
-
-/* SERVICES */
-
-.services{
-  background:#fff;
-}
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
-
-.service{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:22px;
-  padding:24px;
-  box-shadow:0 8px 28px rgba(28,34,56,.045);
-  transition:.2s;
-}
-
-.service:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow);
-}
-
-.icon{
-  width:45px;
-  height:45px;
-  border-radius:14px;
-  display:grid;
-  place-items:center;
-  font-size:21px;
-  margin-bottom:16px;
-}
-
-.i1{background:#eee9ff}
-.i2{background:#e8f1ff}
-.i3{background:#ffeaf5}
-.i4{background:#fff0df}
-.i5{background:#e6f8ef}
-.i6{background:#eaf8ff}
-
-.service h3{
-  margin:0 0 7px;
-  font-size:18px;
-}
-
-.service p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-/* WORK */
-
-.work{
-  background:linear-gradient(180deg,#f7f8fc,#fff);
-}
-
-.work-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-}
-
-.work-card{
-  min-height:285px;
-  border-radius:25px;
-  padding:26px;
-  color:#fff;
-  position:relative;
-  overflow:hidden;
-  box-shadow:var(--shadow);
-  display:flex;
-  flex-direction:column;
-}
-
-.work-card:nth-child(1){
-  background:linear-gradient(135deg,#5e35e8,#a65cf4);
-}
-
-.work-card:nth-child(2){
-  background:linear-gradient(135deg,#1d67dc,#40a8ff);
-}
-
-.work-card:nth-child(3){
-  background:linear-gradient(135deg,#d93f88,#f37b6c);
-}
-
-.work-card:nth-child(4){
-  background:linear-gradient(135deg,#1d7658,#47b77e);
-}
-
-.work-card small{
-  opacity:.78;
-  text-transform:uppercase;
-  letter-spacing:.8px;
-  font-weight:900;
-}
-
-.work-card h3{
-  font-size:26px;
-  line-height:1.1;
-  margin:12px 0 9px;
-}
-
-.work-card p{
-  color:rgba(255,255,255,.86);
-  max-width:470px;
-  line-height:1.65;
-  margin:0;
-}
-
-.work-card .tagrow{
-  position:relative;
-  left:auto;
-  right:auto;
-  bottom:auto;
-  display:flex;
-  gap:7px;
-  flex-wrap:wrap;
-  margin-top:14px;
-}
-
-.work-card .sample-actions{
-  margin-top:auto;
-  padding-top:20px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.sample-link{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-  z-index:5;
-  white-space:nowrap;
-  line-height:1.2;
-  text-decoration:none;
-  color:#fff;
-  font-weight:800;
-  padding:10px 14px;
-  border-radius:10px;
-  border:1px solid rgba(214,177,94,.38);
-  background:rgba(214,177,94,.12);
-  transition:.2s ease;
-}
-
-.sample-link:hover{
-  background:#d6b15e;
-  color:#07111f;
-  transform:translateY(-2px);
-}
-
-.selected-work-cta{
-  display:block;
-  margin-top:18px;
-  position:relative;
-  z-index:3;
-}
-
-.selected-work-cta .sample-link{
-  display:inline-flex;
-}
-
-.sample-anchor{
-  white-space:nowrap;
-}
-
-.inline-sample{
-  display:inline-flex;
-  margin-left:8px;
-  vertical-align:middle;
-  white-space:nowrap;
-}
-
-/* APPROACH */
-
-.approach{
-  background:#fff;
-}
-
-.approach-grid{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:45px;
-  align-items:start;
-}
-
-.steps{
-  display:grid;
-  gap:12px;
-}
-
-.step{
-  display:grid;
-  grid-template-columns:42px 1fr;
-  gap:14px;
-  padding:18px;
-  border:1px solid var(--line);
-  border-radius:18px;
-  background:#fff;
-}
-
-.num{
-  width:38px;
-  height:38px;
-  border-radius:12px;
-  background:#f0edff;
-  color:#927438;
-  display:grid;
-  place-items:center;
-  font-weight:900;
-}
-
-.step h3{
-  margin:0 0 3px;
-  font-size:16px;
-}
-
-.step p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-/* AUDIENCE */
-
-.audience{
-  background:#151827;
-  color:#fff;
-}
-
-.audience-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-}
-
-.audience-card{
-  padding:28px;
-  border:1px solid rgba(255,255,255,.11);
-  background:rgba(255,255,255,.05);
-  border-radius:22px;
-}
-
-.audience-card h3{
-  font-size:22px;
-  margin:0 0 8px;
-}
-
-.audience-card p{
-  color:#c8ccda;
-}
-
-.audience-card ul{
-  margin:18px 0 0;
-  padding-left:18px;
-  color:#e5e7ef;
-}
-
-/* WHY */
-
-#why{
-  background:#f7f4ec;
-  color:#0b1b2f;
-}
-
-.section-kicker{
-  color:#927438;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  margin-bottom:8px;
-}
-
-.section-lead{
-  color:#344054;
-  max-width:760px;
-  font-size:17px;
-  margin-bottom:30px;
-}
-
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.card{
-  background:#fffdf8;
-  border:1px solid #ddd7c9;
-  border-radius:22px;
-  padding:28px;
-  box-shadow:0 10px 30px rgba(11,27,47,.06);
-}
-
-.card-number{
-  color:#927438;
-  font-weight:900;
-  letter-spacing:.15em;
-  margin-bottom:15px;
-}
-
-.card h3{
-  margin:0 0 9px;
-  color:#0b1b2f;
-}
-
-.card p{
-  margin:0;
-  color:#344054;
-}
-
-/* RAW MATERIAL */
-
-#raw-material{
-  background:#0b1b2f;
-  color:#f7f4ec;
-}
-
-.raw-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-  margin-top:30px;
-}
-
-.raw-item{
-  padding:18px 20px;
-  border:1px solid rgba(214,177,94,.18);
-  border-radius:15px;
-  background:rgba(255,255,255,.04);
-  color:#eef1f5;
-  font-weight:700;
-}
-
-/* LINKEDIN */
-
-#linkedin-cta{
-  background:#f7f4ec;
-  color:#0b1b2f;
-}
-
-.social-cta{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:35px;
-  padding:35px;
-  border-radius:25px;
-  background:#fffdf8;
-  border:1px solid #ddd7c9;
-  box-shadow:0 10px 30px rgba(11,27,47,.06);
-}
-
-.social-cta h2{
-  color:#0b1b2f;
-}
-
-.social-cta p{
-  color:#344054;
-  max-width:650px;
-}
-
-.btn-primary{
-  background:#d6b15e;
-  color:#07111f;
-  border:1px solid #d6b15e;
-  font-weight:800;
-  box-shadow:0 12px 30px rgba(214,177,94,.14);
-  white-space:nowrap;
-}
-
-.btn-primary:hover{
-  transform:translateY(-2px);
-}
-
-/* HIRE ME */
-
-#hire-me{
-  background:#f7f4ec;
-  color:#0b1b2f;
-}
-
-.hire-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-  margin-top:30px;
-}
-
-.hire-card{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  padding:25px;
-  border-radius:22px;
-  background:#fffdf8;
-  border:1px solid #ddd7c9;
-  box-shadow:0 10px 30px rgba(11,27,47,.06);
-}
-
-.hire-card h3{
-  color:#0b1b2f;
-  margin:0 0 7px;
-}
-
-.hire-card p{
-  color:#344054;
-  margin:0;
-}
-
-.hire-arrow{
-  color:#927438;
-  font-size:28px;
-  font-weight:900;
-}
-
-/* ABOUT */
-
-#about{
-  background:#f7f4ec;
-  color:#0b1b2f;
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  align-items:start;
-}
-
-.about-card{
-  background:#fffdf8;
-  border:1px solid #ddd7c9;
-  border-radius:24px;
-  padding:28px;
-  box-shadow:0 10px 30px rgba(11,27,47,.06);
-}
-
-.about-card h2{
-  color:#0b1b2f;
-}
-
-.about-card p{
-  color:#344054;
-}
-
-.highlight{
-  background:linear-gradient(135deg,#f0edff,#fff1f7);
-  border:0;
-}
-
-.highlight strong{
-  font-size:31px;
-  display:block;
-  letter-spacing:-1px;
-  color:#0b1b2f;
-}
-
-/* CONTACT */
-
-.contact{
-  padding:80px 0 95px;
-  background:linear-gradient(135deg,#6d45ff,#9b54e9 45%,#e94f9f);
-  color:#fff;
-  text-align:center;
-}
-
-.contact h2{
-  max-width:720px;
-  margin:10px auto 14px;
-}
-
-.contact p{
-  color:rgba(255,255,255,.86);
-  max-width:650px;
-  margin:0 auto;
-}
-
-.contact-actions{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:25px;
-}
-
-.contact .btn-light{
-  border:0;
-}
-
-/* FOOTER */
-
-footer{
-  border-top:1px solid rgba(214,177,94,.16);
-  background:#050c15;
-  color:#9da8b5;
-  padding:25px 0;
-  font-size:13px;
-}
-
-.footer-inner{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-footer strong{
-  color:#f5f1e8;
-}
-
-/* PREMIUM VISUAL REFINEMENTS */
-
-.nav-cta{
-  background:#0d1b2a!important;
-}
-
-.nav-cta:hover{
-  background:#c9a45c!important;
-  color:#0d1b2a!important;
-}
-
-.hero{
-  background:
-    linear-gradient(
-      135deg,
-      rgba(11,27,47,.92),
-      rgba(7,17,31,.98)
-    )!important;
-  min-height:88vh;
-  display:flex;
-  align-items:center;
-}
-
-.hero-card{
-  background:#0d1b2a;
-}
-
-.hero .eyebrow,
-.kicker,
-.section-kicker{
-  color:#d6b15e!important;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  font-weight:700;
-}
-
-.hero-copy{
-  color:#aeb8c5;
-}
-
-.pill,
-.tag{
-  border:1px solid rgba(214,177,94,.3)!important;
-  background:rgba(214,177,94,.07)!important;
-  color:#eee!important;
-}
-
-.work-card{
-  background:
-    linear-gradient(
-      145deg,
-      rgba(18,37,59,.88),
-      rgba(8,20,34,.92)
-    )!important;
-  border:1px solid rgba(214,177,94,.15)!important;
-  box-shadow:0 18px 50px rgba(0,0,0,.20)!important;
-}
-
-.work-card:nth-child(2),
-.work-card:nth-child(3),
-.work-card:nth-child(4){
-  background:
-    linear-gradient(
-      145deg,
-      rgba(18,37,59,.88),
-      rgba(8,20,34,.92)
-    )!important;
-}
-
-.work-card:before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:3px;
-  background:linear-gradient(90deg,#d6b15e,transparent);
-}
-
-.work-card:hover{
-  border-color:rgba(214,177,94,.42)!important;
-  transform:translateY(-5px);
-  transition:.25s ease;
-}
-
-.contact{
-  background:#0b1b2f!important;
-}
-
-.contact .btn-main{
-  background:#d6b15e!important;
-  color:#07111f!important;
-  border:1px solid #d6b15e!important;
-}
-
-.contact .btn-light{
-  background:transparent!important;
-  color:#fff!important;
-  border:1px solid rgba(255,255,255,.38)!important;
-}
-
-a:focus-visible,
-button:focus-visible{
-  outline:2px solid #d6b15e;
-  outline-offset:4px;
-  border-radius:6px;
-}
-
-::selection{
-  background:rgba(214,177,94,.30);
-  color:#fff;
-}
-
-/* ACCESSIBILITY */
-
-.skip-link{
-  position:fixed;
-  left:14px;
-  top:-60px;
-  z-index:999;
-  background:#d6b15e;
-  color:#07111f;
-  padding:10px 14px;
-  border-radius:8px;
-  font-weight:800;
-  transition:top .2s ease;
-}
-
-.skip-link:focus{
-  top:14px;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:850px){
-
-  .hero-grid,
-  .approach-grid,
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  .service-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .grid-3{
-    grid-template-columns:1fr;
-  }
-
-  .raw-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .social-cta{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .hire-grid{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:650px){
-
-  .nav-inner{
-    height:auto;
-    min-height:68px;
-    gap:10px;
-    align-items:center;
-  }
-
-  .nav-links{
-    gap:12px;
-    overflow-x:auto;
-    max-width:70vw;
-    padding:8px 0;
-    scrollbar-width:none;
-  }
-
-  .nav-links::-webkit-scrollbar{
-    display:none;
-  }
-
-  .nav-links a{
-    font-size:12px;
-    white-space:nowrap;
-  }
-
-  .nav-cta{
-    padding:8px 12px;
-  }
-
-  .hero{
-    padding:62px 0 55px;
-  }
-
-  h1{
-    letter-spacing:-2.3px;
-  }
-
-  section{
-    padding:65px 0;
-  }
-
-  .service-grid,
-  .work-grid,
-  .audience-grid,
-  .raw-grid{
-    grid-template-columns:1fr;
-  }
-
-  .work-card{
-    min-height:0;
-  }
-
-  .work-card .sample-actions{
-    margin-top:18px;
-  }
-
-  .selected-work-cta{
-    margin-top:18px;
-  }
-
-  .sample-anchor{
-    white-space:normal;
-  }
-
-  .inline-sample{
-    margin-left:5px;
-  }
-
-  .social-cta{
-    padding:25px;
-  }
-
-  .hire-card{
-    align-items:flex-start;
-  }
-
-  .footer-inner{
-    flex-direction:column;
-  }
-}
-
-@media(prefers-reduced-motion:reduce){
-
-  html{
-    scroll-behavior:auto!important;
-  }
-
-  *,
-  *:before,
-  *:after{
-    transition:none!important;
-    animation:none!important;
-  }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sanusi Okenyi | Ghostwriter & Content Strategist</title>
+  <meta
+    name="description"
+    content="Sanusi Okenyi is a ghostwriter and content strategist creating thought leadership, business storytelling, SEO content, scripts and research-led B2B content."
+  />
+
+  <meta property="og:title" content="Sanusi Okenyi | Ghostwriter & Content Strategist" />
+  <meta
+    property="og:description"
+    content="Research-led writing, thought leadership and business storytelling."
+  />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0b1728;
+      --card: #0d1b2d;
+      --card-2: #102238;
+      --text: #f4f7fb;
+      --muted: #9eacbd;
+      --line: rgba(255,255,255,.10);
+      --accent: #7dd3fc;
+      --accent-2: #38bdf8;
+      --white: #ffffff;
+      --max: 1180px;
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(18px);
+      background: rgba(7, 17, 31, .88);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      border: 1px solid var(--line);
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: var(--white) !important;
+    }
+
+    .mobile-menu {
+      display: none;
+      background: none;
+      border: 0;
+      color: white;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 100px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(46px, 7vw, 84px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      line-height: 1.2;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: clamp(18px, 2.1vw, 23px);
+      margin-top: 28px;
+    }
+
+    .section-intro {
+      max-width: 700px;
+      margin-bottom: 45px;
+    }
+
+    .section-intro p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(56,189,248,.10), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(125,211,252,.06), transparent 30%);
+    }
+
+    .hero-content {
+      padding: 70px 0;
+    }
+
+    .hero-line {
+      width: 70px;
+      height: 2px;
+      background: var(--accent);
+      margin: 32px 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 38px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 21px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-weight: 700;
+      font-size: 14px;
+      transition: .2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--white);
+      color: #07111f;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* SERVICES */
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      min-height: 190px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* WORK */
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .work-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 230px;
+    }
+
+    .work-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .work-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .work-card .btn {
+      margin-top: 25px;
+      align-self: flex-start;
+    }
+
+    /* B2B */
+
+    .b2b-hero {
+      background:
+        radial-gradient(circle at 75% 15%, rgba(56,189,248,.09), transparent 30%),
+        var(--bg-soft);
+    }
+
+    .b2b-labels {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 32px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .08em;
+      font-weight: 700;
+    }
+
+    .featured-article {
+      margin-top: 55px;
+      padding: 42px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(135deg, #0e2137, #0a1728);
+    }
+
+    .featured-article h3 {
+      font-size: clamp(28px, 4vw, 44px);
+      max-width: 850px;
+      letter-spacing: -.035em;
+    }
+
+    .featured-article p {
+      color: var(--muted);
+      max-width: 720px;
+      margin-top: 18px;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .article-card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+    }
+
+    .article-card .category {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    .article-card h3 {
+      font-size: 23px;
+      margin-bottom: 13px;
+    }
+
+    .article-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .article-card button {
+      margin-top: 22px;
+      border: 0;
+      background: none;
+      color: var(--accent);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    /* QUESTIONS */
+
+    .questions {
+      margin-top: 70px;
+    }
+
+    .question-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .question {
+      border-left: 2px solid var(--accent);
+      padding: 5px 0 5px 20px;
+    }
+
+    .question span {
+      color: var(--accent);
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      margin-bottom: 6px;
+    }
+
+    .question p {
+      color: var(--muted);
+    }
+
+    /* RESEARCH */
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .research-card {
+      padding: 23px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
+    }
+
+    .research-card strong {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .research-card span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* APPROACH */
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .step {
+      position: relative;
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .num {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      margin-bottom: 25px;
+    }
+
+    .step h3 {
+      margin-bottom: 10px;
+      font-size: 19px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* AUDIENCE */
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .audience-card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+    }
+
+    .audience-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .audience-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .skill {
+      border: 1px solid var(--line);
+      padding: 9px 13px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      padding: 120px 0;
+      background: var(--bg-soft);
+    }
+
+    .cta p {
+      max-width: 620px;
+      margin: 20px auto 30px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    /* MODAL */
+
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 3000;
+      background: rgba(0,0,0,.78);
+      padding: 30px 15px;
+      overflow-y: auto;
+    }
+
+    .modal.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-box {
+      width: min(850px, 100%);
+      max-height: 90vh;
+      overflow-y: auto;
+      background: #0b1728;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 40px;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      right: 22px;
+      top: 17px;
+      background: none;
+      border: 0;
+      color: var(--muted);
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .modal-box .category {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .modal-box h2 {
+      font-size: clamp(30px, 5vw, 50px);
+      padding-right: 30px;
+    }
+
+    .modal-box p {
+      color: #c1ccd9;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .modal-box .modal-question {
+      color: white;
+      font-size: 19px;
+      font-weight: 700;
+      border-left: 2px solid var(--accent);
+      padding-left: 18px;
+      margin-top: 28px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .service-grid,
+      .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .research-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background: #07111f;
+        border-bottom: 1px solid var(--line);
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .service-grid,
+      .work-grid,
+      .article-grid,
+      .question-grid,
+      .audience-grid,
+      .research-grid,
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-article {
+        padding: 27px;
+      }
+
+      .modal-box {
+        padding: 28px 22px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<a class="skip-link" href="#main-content">
-  Skip to content
+  <!-- NAVIGATION -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo">SANUSI <span>OKENYI</span></a>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#thought-leadership">B2B</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="eyebrow">Ghostwriter · Content Strategist · Business Writer</div>
+
+        <h1>
+          Ideas deserve better than generic content.
+        </h1>
+
+        <div class="hero-line"></div>
+
+        <p class="lead">
+          I research, shape and write ideas that make people stop, think and
+          keep reading — from executive thought leadership to business
+          storytelling, SEO content and short-form scripts.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Work With Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-intro">
+          <div class="eyebrow">What I Write</div>
+          <h2>Writing built around the reader.</h2>
+          <p>
+            Different formats. One goal: make the message clear, useful and
+            difficult to ignore.
+          </p>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+            <h3>Ghostwriting</h3>
+            <p>
+              LinkedIn posts, founder voices, executive content and
+              thought-leadership pieces that sound like a person — not a
+              content machine.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>B2B Content</h3>
+            <p>
+              Research-led articles and business content covering technology,
+              AI, operations, growth, product and decision-making.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Business Storytelling</h3>
+            <p>
+              Turning complicated ideas, business problems and experiences into
+              stories people can actually follow.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>SEO Content</h3>
+            <p>
+              Search-aware content that still reads naturally and gives the
+              reader a reason to continue.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Scripts</h3>
+            <p>
+              Reels, short-form videos, episodic concepts and narrative scripts
+              built around hooks, pacing and audience attention.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Business Documents</h3>
+            <p>
+              Proposals, reports, executive summaries, company documents and
+              research-based business writing.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section id="work">
+      <div class="container">
+        <div class="section-intro">
+          <div class="eyebrow">Selected Work</div>
+          <h2>Different formats. Same attention to the idea.</h2>
+          <p>
+            A selection of writing samples across business content,
+            storytelling, scripts and creative concepts.
+          </p>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="work-card">
+            <div>
+              <h3>Hospital Content & Script Samples</h3>
+              <p>
+                Content and script examples showing research, audience
+                awareness and practical storytelling.
+              </p>
+            </div>
+
+            <a
+              class="btn btn-secondary"
+              href="./HOSPITAL%20CONTENT%20%26%20SCRIPT%20SAMPLES.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Open PDF →
+            </a>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <h3>The Growth Decision</h3>
+              <p>
+                A business storytelling sample built around a difficult
+                decision and its consequences.
+              </p>
+            </div>
+
+            <a
+              class="btn btn-secondary"
+              href="./The_Growth_Decision_Portfolio_Sample.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Open PDF →
+            </a>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <h3>The Lost Customer File</h3>
+              <p>
+                A narrative business concept using investigation and
+                storytelling to explore customer loss.
+              </p>
+            </div>
+
+            <a
+              class="btn btn-secondary"
+              href="./The_Lost_Customer_File_Sample_2%20(1).pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Open PDF →
+            </a>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <h3>The Little Lantern That Was Afraid to Shine</h3>
+              <p>
+                A creative storytelling sample demonstrating character,
+                emotion and narrative structure.
+              </p>
+            </div>
+
+            <a
+              class="btn btn-secondary"
+              href="./The%20Little%20Lantern%20That%20Was%20Afraid%20to%20Shine.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Open PDF →
+            </a>
+          </article>
+
+          <article class="work-card">
+            <div>
+              <h3>Five Minutes</h3>
+              <p>
+                A mobile-episode concept designed around a compact narrative
+                and short-form viewing.
+              </p>
+            </div>
+
+<a
+  class="btn btn-secondary"
+  href="./FIVE_MINUTES_MOBILE_EPISODE.pdf"
+  target="_blank"
+  rel="noopener"
+>
+  Open PDF →
 </a>
+</article>
 
-<nav class="nav" aria-label="Primary navigation">
-
-  <div class="container nav-inner">
-
-    <a
-      class="logo"
-      href="#top"
-      aria-label="Sanusi Okenyi home"
-    >
-      SANUSI <span>OKENYI</span>
-    </a>
-
-    <div class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#approach">Approach</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </div>
-
+<article class="work-card">
+  <div>
+    <h3>Seen at 11:43</h3>
+    <p>
+      A series concept demonstrating tension, pacing and episodic
+      storytelling.
+    </p>
   </div>
 
-</nav>
+  <a
+    class="btn btn-secondary"
+    href="./SEEN_AT_1143_SERIES_CONCEPT.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    Open PDF →
+  </a>
+</article>
 
-<main id="main-content">
-
-<!-- HERO -->
-
-<section class="hero" id="top">
-
-  <div class="container hero-grid">
-
-    <div>
-
-      <div class="eyebrow">
-        <span class="dot"></span>
-        Available for freelance &amp; part-time opportunities
-      </div>
-
-      <h1>
-        Your ideas deserve better than
-        <span class="gradient-text">
-          generic content.
-        </span>
-      </h1>
-
-      <p class="hero-copy">
-        I’m Sanusi Okenyi — a
-        <strong>LinkedIn Ghostwriter &amp; Content Strategist</strong>
-        focused on thought leadership, business writing and content
-        that sounds human. I write across formats, industries and
-        communication goals, turning rough ideas, expertise and briefs
-        into clear, persuasive writing people can understand, remember
-        and act on.
-      </p>
-
-      <div class="hero-actions">
-
-        <a class="btn btn-main" href="#work">
-          View selected work
-        </a>
-
-        <a class="btn btn-light" href="#contact">
-          Start a conversation
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="hero-card">
-
-      <h3>What I bring</h3>
-
-      <p>
-        I look for the strongest idea, the right angle and the clearest
-        way to make the message land.
-      </p>
-
-      <div class="pills">
-
-        <span class="pill">LinkedIn Ghostwriting</span>
-        <span class="pill">Thought Leadership</span>
-        <span class="pill">Storytelling</span>
-        <span class="pill">Social Content</span>
-        <span class="pill">Video Scripts</span>
-        <span class="pill">Content Strategy</span>
-        <span class="pill">Business Writing</span>
-        <span class="pill">Ad Copy</span>
-
-      </div>
-
-    </div>
-
+<article class="work-card">
+  <div>
+    <h3>The Message</h3>
+    <p>
+      An episodic scene built around dialogue, tension and narrative
+      progression.
+    </p>
   </div>
 
+  <a
+    class="btn btn-secondary"
+    href="./THE_MESSAGE_EPISODIC_SCENE.pdf"
+    target="_blank"
+    rel="noopener"
+  >
+    Open PDF →
+  </a>
+</article>
+
+</div>
+</div>
 </section>
 
 
-<!-- SERVICES -->
-
-<section id="services">
-
+<!-- B2B THOUGHT LEADERSHIP -->
+<section id="thought-leadership" class="b2b-hero">
   <div class="container">
 
-    <div class="section-head">
+    <div class="eyebrow">B2B Thought Leadership</div>
 
-      <div class="kicker">What I do</div>
+    <h2>
+      Ideas for people making difficult business decisions.
+    </h2>
 
-      <h2>
-        Writing built around the job the content needs to do.
-      </h2>
+    <p class="lead">
+      Research-led writing at the intersection of AI, technology, growth,
+      operations and product strategy.
+    </p>
 
-      <p>
-        I work from the brief outward: the audience, the message,
-        the platform and the action the content needs to support.
-      </p>
-
+    <div class="b2b-labels">
+      <span class="pill">AI & STRATEGY</span>
+      <span class="pill">GTM & GROWTH</span>
+      <span class="pill">OPERATIONS</span>
+      <span class="pill">PRODUCT</span>
     </div>
 
+    <!-- FEATURED ARTICLE -->
+    <article class="featured-article">
+      <div class="eyebrow">Featured</div>
 
-    <div class="service-grid">
+      <h3>
+        AI Is Not Your Competitive Advantage. The Decisions You Make With It Are.
+      </h3>
 
-      <article class="service">
-        <div class="icon i1">✦</div>
+      <p>
+        AI is becoming easier to access. The harder competitive advantage
+        is knowing what to do with it.
+      </p>
+
+      <button
+        class="btn btn-secondary"
+        style="margin-top:25px;"
+        onclick="openArticle('article1')"
+      >
+        Read sample →
+      </button>
+    </article>
+
+
+    <!-- ARTICLE CARDS -->
+    <div class="article-grid">
+
+      <article class="article-card">
+        <div class="category">Operations</div>
 
         <h3>
-          LinkedIn Ghostwriting &amp; Thought Leadership
+          Your Supply Chain Isn't Slow. Your Decisions Are.
         </h3>
 
         <p>
-          Posts and thought-leadership content shaped around your
-          expertise, voice, ideas and professional positioning.
+          Visibility creates decision time.
         </p>
+
+        <button onclick="openArticle('article2')">
+          Read sample →
+        </button>
       </article>
 
 
-      <article class="service">
-        <div class="icon i2">✎</div>
+      <article class="article-card">
+        <div class="category">GTM & B2B Growth</div>
 
-        <h3>Business &amp; Professional Writing</h3>
+        <h3>
+          Most Companies Don't Have a Lead Problem. They Have a Trust Problem.
+        </h3>
 
         <p>
-          Clear, structured writing for business communication,
-          professional documents and information-heavy material.
+          Attention gets you noticed. Trust gets you considered.
         </p>
+
+        <button onclick="openArticle('article3')">
+          Read sample →
+        </button>
       </article>
 
 
-      <article class="service">
-        <div class="icon i3">◆</div>
+      <article class="article-card">
+        <div class="category">Product & AI</div>
 
-        <h3>Website &amp; Brand Content</h3>
+        <h3>
+          The AI Feature Nobody Asked For Is Usually the Feature That Gets Built.
+        </h3>
 
         <p>
-                  Website copy and brand messaging designed to explain what you do
-          clearly and give visitors a reason to continue.
+          When building gets cheaper, judgment becomes more valuable.
         </p>
+
+        <button onclick="openArticle('article4')">
+          Read sample →
+        </button>
       </article>
 
-      <article class="service">
-        <div class="icon i4">◌</div>
-        <h3>Social Media Content</h3>
-        <p>
-          Social posts, captions, content ideas and messaging built around
-          audience attention and platform context.
-        </p>
-      </article>
 
-      <article class="service">
-        <div class="icon i5">▤</div>
-        <h3>Articles &amp; Blog Writing</h3>
-        <p>
-          Useful, readable long-form content with research, structure,
-          strong openings and a clear purpose.
-        </p>
-      </article>
+      <article class="article-card">
+        <div class="category">Executive Strategy</div>
 
-      <article class="service">
-        <div class="icon i6">↗</div>
-        <h3>Marketing &amp; Sales Copy</h3>
-        <p>
-          Copy that makes an offer easier to understand and gives the reader
-          a clear reason to take the next step.
-        </p>
-      </article>
+        <h3>
+          The Most Expensive Business Decisions Are Often the Ones Nobody Thinks They Made.
+        </h3>
 
-      <article class="service">
-        <div class="icon i1">▶</div>
-        <h3>Reels &amp; Short-Form Video Scripts</h3>
         <p>
-          Hooks, scripts and short-form concepts built for attention,
-          clarity, storytelling and retention.
+          Some decisions happen without anyone realizing they made them.
         </p>
-      </article>
 
-      <article class="service">
-        <div class="icon i2">◈</div>
-        <h3>Business Storytelling</h3>
-        <p>
-          Turning information, experience and business ideas into stories
-          people can follow and remember.
-        </p>
-      </article>
-
-      <article class="service">
-        <div class="icon i3">⌁</div>
-        <h3>Content Strategy</h3>
-        <p>
-          Content direction built around audience questions, positioning,
-          messaging and the outcome the content should support.
-        </p>
-      </article>
-
-      <article class="service">
-        <div class="icon i4">◎</div>
-        <h3>Lead-Generation Content</h3>
-        <p>
-          Messaging designed to attract the right audience, create interest
-          and move qualified prospects toward action.
-        </p>
-      </article>
-
-      <article class="service">
-        <div class="icon i5">▦</div>
-        <h3>Business Proposals &amp; Company Profiles</h3>
-        <p>
-          Structured business documents that turn information into a clear,
-          credible presentation.
-        </p>
-      </article>
-
-      <article class="service">
-        <div class="icon i6">✓</div>
-        <h3>Research, Editing &amp; Proofreading</h3>
-        <p>
-          Research, rewriting and editing support for content that needs
-          stronger structure, clarity and polish.
-        </p>
-      </article>
-
-      <article class="service">
-        <div class="icon i1">▱</div>
-        <h3>Ad Copy &amp; Campaign Messaging</h3>
-        <p>
-          Hooks, headlines, primary text and campaign messaging designed
-          to make the value proposition easier to understand.
-        </p>
+        <button onclick="openArticle('article5')">
+          Read sample →
+        </button>
       </article>
 
     </div>
+
+
+    <!-- QUESTIONS -->
+    <div class="questions">
+
+      <div class="eyebrow">Questions I Explore</div>
+
+      <div class="question-grid">
+
+        <div class="question">
+          <span>AI</span>
+          <p>
+            What happens when everyone has access to the same technology?
+          </p>
+        </div>
+
+        <div class="question">
+          <span>OPERATIONS</span>
+          <p>
+            What happens when a business discovers risk too late?
+          </p>
+        </div>
+
+        <div class="question">
+          <span>GTM</span>
+          <p>
+            What happens when attention doesn't translate into confidence?
+          </p>
+        </div>
+
+        <div class="question">
+          <span>PRODUCT</span>
+          <p>
+            What happens when companies can build faster than customers can adopt?
+          </p>
+        </div>
+
+        <div class="question">
+          <span>LEADERSHIP</span>
+          <p>
+            What happens when organizations stop questioning decisions they made years ago?
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- RESEARCH SOURCES -->
+    <div style="margin-top:75px;">
+
+      <div class="eyebrow">
+        Selected Research Sources
+      </div>
+
+      <p style="color:var(--muted); max-width:700px; margin-bottom:25px;">
+        The work combines original analysis with research from established
+        business, technology and market sources.
+      </p>
+
+      <div class="research-grid">
+
+        <div class="research-card">
+          <strong>McKinsey & Company</strong>
+          <span>AI · Operations · Procurement</span>
+        </div>
+
+        <div class="research-card">
+          <strong>Edelman + LinkedIn</strong>
+          <span>B2B buying · Thought leadership</span>
+        </div>
+
+        <div class="research-card">
+          <strong>Harvard Business Review</strong>
+          <span>Strategy · Decision-making</span>
+        </div>
+
+        <div class="research-card">
+          <strong>Deloitte</strong>
+          <span>Procurement · Supply chain</span>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
 
-<!-- SELECTED WORK -->
-
-<section class="work" id="work">
+<!-- APPROACH -->
+<section id="approach">
   <div class="container">
 
-    <div class="section-head">
-      <div class="kicker">Selected work</div>
+    <div class="section-intro">
+
+      <div class="eyebrow">My Approach</div>
 
       <h2>
-        Don’t just take my word for it. Look at the thinking.
+        I don't start with the words. I start with the problem.
       </h2>
 
       <p>
-        Seven samples showing how I approach audience questions,
-        conversion friction, business decisions, storytelling and
-        information-heavy writing.
+        Good content usually becomes easier to write once the real question
+        has been identified.
       </p>
 
-      <div class="selected-work-cta">
-        <a class="sample-link" href="#contact">
-          Start a conversation →
-        </a>
+    </div>
+
+
+    <div class="approach-grid">
+
+      <div class="step">
+        <div class="num">01</div>
+
+        <h3>Understand</h3>
+
+        <p>
+          I identify the audience, objective, context and actual problem
+          behind the brief.
+        </p>
       </div>
+
+
+      <div class="step">
+        <div class="num">02</div>
+
+        <h3>Research</h3>
+
+        <p>
+          I investigate the subject, look for evidence and separate useful
+          information from noise.
+        </p>
+      </div>
+
+
+      <div class="step">
+        <div class="num">03</div>
+
+        <h3>Find the Angle</h3>
+
+        <p>
+          I look for the question, tension or insight that gives the piece
+          something worth saying.
+        </p>
+      </div>
+
+
+      <div class="step">
+        <div class="num">04</div>
+
+        <h3>Write</h3>
+
+        <p>
+          I turn the thinking into clear, natural writing designed for the
+          actual reader — not an imaginary algorithm.
+        </p>
+      </div>
+
     </div>
 
-    <div class="work-grid">
-
-      <!-- 01 — HOSPITAL CONTENT -->
-
-      <article class="work-card">
-        <small>Social Content &amp; Video Scripts</small>
-
-        <h3>Hospital Content &amp; Script Samples</h3>
-
-        <p>
-          Short-form concepts built around real audience questions,
-          emotion, useful information and memorable storytelling.
-        </p>
-
-        <div class="tagrow">
-          <span class="tag">Copywriting</span>
-          <span class="tag">Marketing</span>
-          <span class="tag">Social</span>
-        </div>
-
-        <div class="sample-actions">
-          <a
-            class="sample-link"
-            href="./HOSPITAL%20CONTENT%20%26%20SCRIPT%20SAMPLES.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View sample →
-          </a>
-        </div>
-      </article>
-
-
-      <!-- 02 — GROWTH DECISION -->
-
-      <article class="work-card">
-        <small>Strategy &amp; Business Writing</small>
-
-        <h3>The Growth Decision</h3>
-
-        <p>
-          A practical proposal showing how customer friction can be
-          turned into a clearer decision and a measurable growth roadmap.
-        </p>
-
-        <div class="tagrow">
-          <span class="tag">Strategy</span>
-          <span class="tag">Business Writing</span>
-          <span class="tag">Growth</span>
-        </div>
-
-        <div class="sample-actions">
-          <a
-            class="sample-link"
-            href="./The_Growth_Decision_Portfolio_Sample.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View sample →
-          </a>
-        </div>
-      </article>
-
-
-      <!-- 03 — LOST CUSTOMER -->
-
-      <article class="work-card">
-        <small>Marketing &amp; Conversion Thinking</small>
-
-        <h3>The Lost Customer File</h3>
-
-        <p>
-          An investigation into where good prospects disappear —
-          and a practical framework for identifying friction and
-          improving the customer journey.
-        </p>
-
-        <div class="tagrow">
-          <span class="tag">Conversion</span>
-          <span class="tag">Customer Journey</span>
-          <span class="tag">Marketing</span>
-        </div>
-
-        <div class="sample-actions">
-          <a
-            class="sample-link"
-            href="./The_Lost_Customer_File_Sample_2%20(1).pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View sample →
-          </a>
-        </div>
-      </article>
-
-
-      <!-- 04 — LITTLE LANTERN -->
-
-      <article class="work-card">
-        <small>Creative Storytelling</small>
-
-        <h3>The Little Lantern That Was Afraid to Shine</h3>
-
-        <p>
-          A character-driven creative story about fear, courage
-          and finding the confidence to be seen.
-        </p>
-
-        <div class="tagrow">
-          <span class="tag">Creative Writing</span>
-          <span class="tag">Storytelling</span>
-          <span class="tag">Emotion</span>
-        </div>
-
-        <div class="sample-actions">
-          <a
-            class="sample-link"
-            href="./The%20Little%20Lantern%20That%20Was%20Afraid%20to%20Shine.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View sample →
-          </a>
-        </div>
-      </article>
-
-
-      <!-- 05 — FIVE MINUTES -->
-
-      <article class="work-card">
-        <small>Creative Writing &amp; Storytelling</small>
-
-        <h3>Five Minutes</h3>
-
-        <p>
-          A concise creative piece built around pacing, curiosity
-          and the small moments that can carry a story.
-        </p>
-
-        <div class="tagrow">
-          <span class="tag">Storytelling</span>
-          <span class="tag">Creative Writing</span>
-          <span class="tag">Narrative</span>
-        </div>
-
-        <div class="sample-actions">
-          <a
-            class="sample-link"
-            href="./FIVE_MINUTES_MOBILE_EPISODE.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View sample →
-          </a>
-        </div>
-      </article>
-
-
-      <!-- 06 — SEEN AT 11:43 -->
-
-      <article class="work-card">
-        <small>Storytelling &amp; Creative Content</small>
-
-        <h3>Seen at 11:43</h3>
-
-        <p>
-          A human-centered story using curiosity, emotion and
-          narrative tension to keep the reader moving forward.
-        </p>
-
-        <div class="tagrow">
-          <span class="tag">Storytelling</span>
-          <span class="tag">Creative</span>
-          <span class="tag">Narrative</span>
-        </div>
-
-        <div class="sample-actions">
-          <a
-            class="sample-link"
-            href="./SEEN_AT_1143_SERIES_CONCEPT.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View sample →
-          </a>
-        </div>
-      </article>
-
-
-      <!-- 07 — THE MESSAGE -->
-
-      <article class="work-card">
-        <small>Creative Writing &amp; Episodic Storytelling</small>
-
-        <h3>The Message</h3>
-
-        <p>
-          An episodic scene built around dialogue, curiosity,
-          tension and the need to keep the audience reading.
-        </p>
-
-        <div class="tagrow">
-          <span class="tag">Creative Writing</span>
-          <span class="tag">Storytelling</span>
-          <span class="tag">Script</span>
-        </div>
-
-        <div class="sample-actions">
-          <a
-            class="sample-link"
-            href="./THE_MESSAGE_EPISODIC_SCENE.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            View sample →
-          </a>
-        </div>
-      </article>
-
-    </div>
   </div>
 </section>
 
 
 <!-- AUDIENCE -->
+<section>
 
-<section class="audience">
   <div class="container">
 
-    <div class="section-head">
-      <div class="kicker" style="color:#bcaeff">
-        Who I work with
-      </div>
+    <div class="section-intro">
+
+      <div class="eyebrow">Who I Work With</div>
 
       <h2>
-        Built to work in both freelance and team environments.
+        Useful when the message matters.
       </h2>
+
     </div>
+
 
     <div class="audience-grid">
 
-      <div class="audience-card">
-        <h3>For freelance clients</h3>
+      <article class="audience-card">
+
+        <h3>Founders & Executives</h3>
 
         <p>
-          Bring the brief, the raw material or the idea. I can shape it into
-          a finished piece with the right structure and voice.
+          For leaders who have strong ideas but don't have the time to turn
+          every idea into strong content.
         </p>
 
-        <ul>
-          <li>Project-based copywriting</li>
-          <li>Content packages</li>
-          <li>Scripts and campaigns</li>
-          <li>Editing and rewriting</li>
-        </ul>
-      </div>
+      </article>
 
-      <div class="audience-card">
-        <h3>For companies &amp; teams</h3>
+
+      <article class="audience-card">
+
+        <h3>Startups & B2B Teams</h3>
 
         <p>
-          For teams that need an extra writing hand across content,
-          research, scripts or business communication.
+          For teams that need clear writing around products, markets,
+          technology and growth.
         </p>
 
-        <ul>
-          <li>Social and marketing content</li>
-          <li>Content research and ideation</li>
-          <li>Brand and business storytelling</li>
-          <li>Copy and script support</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </article>
 
 
-<!-- WHY -->
+      <article class="audience-card">
 
-<section id="why">
-
-  <div class="container">
-
-    <div class="section-kicker">
-      WHY THIS WORKS
-    </div>
-
-    <h2>
-      Writing that starts with the job, not the template.
-    </h2>
-
-    <p class="section-lead">
-      The point is not to make every piece sound impressive.
-      It is to make the right idea clearer, more useful and easier to act on.
-    </p>
-
-    <div class="grid-3">
-
-      <article class="card">
-        <div class="card-number">01</div>
-
-        <h3>A writer who thinks first</h3>
+        <h3>Brands & Agencies</h3>
 
         <p>
-          I look at the audience, the problem, the message and the desired
-          response before deciding how the content should be written.
-        </p>
-      </article>
-
-      <article class="card">
-        <div class="card-number">02</div>
-
-        <h3>One brief, many formats</h3>
-
-        <p>
-          A voice note, rough idea, research, document or conversation can
-          become a LinkedIn post, script, article, campaign concept or
-          business document.
-        </p>
-      </article>
-
-      <article class="card">
-        <div class="card-number">03</div>
-
-        <h3>Strategy behind the words</h3>
-
-        <p>
-          Good content should do a job: build authority, clarify an offer,
-          hold attention, explain a problem or move the reader toward action.
-        </p>
-      </article>
-
-    </div>
-  </div>
-
-</section>
-
-
-<!-- GHOSTWRITING -->
-
-<section id="raw-material">
-
-  <div class="container">
-
-    <div class="section-kicker">
-      GHOSTWRITING
-    </div>
-
-    <h2>
-      You don't need to arrive with a finished idea.
-    </h2>
-
-    <p class="section-lead">
-      Send the raw material. I'll help shape the thinking into something
-      ready to publish.
-    </p>
-
-    <div class="raw-grid">
-
-      <div class="raw-item">A voice note</div>
-      <div class="raw-item">Rough notes</div>
-      <div class="raw-item">A conversation</div>
-      <div class="raw-item">A document</div>
-      <div class="raw-item">A half-formed LinkedIn idea</div>
-      <div class="raw-item">A problem you need to explain</div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- LINKEDIN -->
-
-<section id="linkedin-cta">
-
-  <div class="container">
-
-    <div class="social-cta">
-
-      <div>
-
-        <div class="section-kicker">
-          LINKEDIN
-        </div>
-
-        <h2>
-          See how I think in public.
-        </h2>
-
-        <p>
-          I write about writing, business communication, content strategy
-          and the thinking behind strong content.
+          For teams that need another reliable writer for research,
+          concepts, scripts, copy or long-form content.
         </p>
 
-      </div>
-
-      <a
-        class="btn btn-primary"
-        href="https://www.linkedin.com/in/sanusiokenyiprofile"
-        target="_blank"
-        rel="noopener"
-        aria-label="Read Sanusi Okenyi on LinkedIn"
-      >
-        Read my LinkedIn →
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- HIRE ME -->
-
-<section id="hire-me">
-
-  <div class="container">
-
-    <div class="section-kicker">
-      WAYS TO WORK TOGETHER
-    </div>
-
-    <h2>
-      Hire me for the writing job behind the content.
-    </h2>
-
-    <p class="section-lead">
-      Bring the objective and the raw material. I can shape the message,
-      structure and final copy around the audience and platform.
-    </p>
-
-    <div class="hire-grid">
-
-      <article class="hire-card">
-        <div>
-          <h3>LinkedIn Ghostwriting</h3>
-
-          <p>
-            Thought leadership, personal-brand posts, founder content and
-            consistent LinkedIn publishing support.
-          </p>
-        </div>
-
-        <div class="hire-arrow">→</div>
-      </article>
-
-      <article class="hire-card">
-        <div>
-          <h3>Business Writing</h3>
-
-          <p>
-            Proposals, company profiles, reports and professional documents
-            where structure and clarity matter.
-          </p>
-        </div>
-
-        <div class="hire-arrow">→</div>
-      </article>
-
-      <article class="hire-card">
-        <div>
-          <h3>Content &amp; Scripts</h3>
-
-          <p>
-            Social content, Reels concepts, short-form video scripts,
-            articles and brand storytelling.
-          </p>
-        </div>
-
-        <div class="hire-arrow">→</div>
-      </article>
-
-      <article class="hire-card">
-        <div>
-          <h3>Marketing Copy</h3>
-
-          <p>
-            Campaign messaging, landing-page copy, lead-generation content
-            and conversion-focused writing.
-          </p>
-        </div>
-
-        <div class="hire-arrow">→</div>
       </article>
 
     </div>
+
   </div>
 
 </section>
 
 
 <!-- ABOUT -->
-
 <section id="about">
 
   <div class="container about-grid">
 
-    <div class="about-card">
+    <div>
 
-      <div class="kicker">
-        About me
+      <div class="eyebrow">
+        About the Writer
       </div>
 
       <h2>
-        Curious about the idea behind the words — and what they need
-        to accomplish.
+        I write at the intersection of business reality, technology and
+        decision-making.
       </h2>
-
-      <p>
-        I enjoy the creative side of writing: researching a subject,
-        finding the angle, developing the hook, shaping the story and
-        turning information into something people actually want to read
-        or watch.
-      </p>
-
-      <p>
-        My background also gives me experience with practical business
-        and operational subjects, so I’m comfortable working with
-        information that needs structure, accuracy and clear communication.
-      </p>
 
     </div>
 
-    <div class="about-card highlight">
 
-      <div class="kicker">
-        What you can expect
+    <div class="about-text">
+
+      <p>
+        I'm Sanusi Okenyi, a business and content writer focused on the
+        decisions behind technology, growth and execution.
+      </p>
+
+      <p>
+        My work combines research, operational perspective and clear
+        storytelling to turn complex business questions into ideas that
+        executives, teams and customers can actually use.
+      </p>
+
+      <p>
+        I'm particularly interested in writing that sits between business
+        reality and human attention — where the challenge isn't simply
+        producing more content, but finding something worth saying.
+      </p>
+
+
+      <div class="skill-list">
+
+        <span class="skill">B2B CONTENT</span>
+        <span class="skill">THOUGHT LEADERSHIP</span>
+        <span class="skill">AI</span>
+        <span class="skill">GTM</span>
+        <span class="skill">BUSINESS STORYTELLING</span>
+        <span class="skill">OPERATIONS</span>
+        <span class="skill">PROCUREMENT</span>
+
       </div>
-
-      <strong>
-        Human writing.
-      </strong>
-
-      <p>
-        No filler and no interchangeable copy. Each piece should have
-        a reason for every paragraph, sentence and call to action.
-      </p>
-
-      <strong style="margin-top:20px">
-        Flexible collaboration.
-      </strong>
-
-      <p>
-        Available for freelance projects as well as part-time and
-        contract opportunities where ongoing writing support is needed.
-      </p>
 
     </div>
 
@@ -1958,88 +1393,1091 @@ button:focus-visible{
 
 
 <!-- CONTACT -->
-
-<section id="contact" class="contact">
+<section class="cta" id="contact">
 
   <div class="container">
 
-    <div class="kicker" style="color:#f1dfff">
-      Start with the brief
+    <div class="eyebrow">
+      Let's Work Together
     </div>
 
     <h2>
-      Have a brief, a rough idea—or just know what the content needs
-      to achieve?
+      Have a business problem worth exploring?
     </h2>
 
     <p>
-      Tell me what you’re trying to communicate. We can start with
-      the objective, the audience and the message — then build the
-      right content around it.
+      Bring the question. I'll do the research, find the angle and turn it
+      into something worth reading.
     </p>
 
-    <div class="contact-actions">
+    <a
+      href="mailto:sanusiokenyi7@gmail.com"
+      class="btn btn-primary"
+    >
+      Let's Talk →
+    </a>
 
-      <a
-        class="btn btn-main"
-        href="mailto:sanusiokenyi7@gmail.com"
-      >
-        Email me
-      </a>
+    <br />
 
-      <a
-        class="btn btn-light"
-        href="https://www.linkedin.com/in/sanusiokenyiprofile"
-        target="_blank"
-        rel="noopener"
-        aria-label="Open LinkedIn profile and message me"
-      >
-        LinkedIn
-      </a>
-
-      <a
-        class="btn btn-light"
-        href="https://wa.me/2348148547591"
-        target="_blank"
-        rel="noopener"
-        aria-label="Chat with Sanusi Okenyi on WhatsApp"
-      >
-        Chat on WhatsApp
-      </a>
-
-    </div>
+    <a
+      class="email"
+      href="mailto:sanusiokenyi7@gmail.com"
+    >
+      sanusiokenyi7@gmail.com
+    </a>
 
   </div>
 
 </section>
 
 
-<!-- FOOTER -->
+</main>
 
+
+<!-- FOOTER -->
 <footer>
 
   <div class="container footer-inner">
 
     <div>
-      <strong>Sanusi Okenyi</strong>
-
-      <br>
-
-      <span style="opacity:.8">
-        LinkedIn Ghostwriter &amp; Content Strategist
-      </span>
+      © 2026 Sanusi Okenyi. All rights reserved.
     </div>
 
-    <div>
-      Ghostwriting · Thought Leadership · Business Writing · Content Strategy
+    <div class="footer-links">
+
+      <a
+        href="https://www.linkedin.com/in/sanusi-okenyi-835b61422"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+      <a href="mailto:sanusiokenyi7@gmail.com">
+        Email
+      </a>
+
     </div>
 
   </div>
 
 </footer>
 
+
+<!-- ARTICLE 1 -->
+<div class="modal" id="article1">
+
+  <div class="modal-box">
+
+    <button
+      class="close"
+      onclick="closeArticle('article1')"
+    >
+      ×
+    </button>
+
+    <div class="category">
+      AI & Strategy
+    </div>
+
+    <h2>
+      AI Is Not Your Competitive Advantage. The Decisions You Make With It Are.
+    </h2>
+
+    <p>
+      AI is becoming easier to access. The harder competitive advantage is
+      knowing what to do with it.
+    </p>
+
+    <p>
+      That distinction matters because technology can accelerate almost
+      anything — including bad decisions.
+    </p>
+
+    <p>
+      A company can use AI to produce reports faster, write more content,
+      analyse more information and automate repetitive work. But if the
+      underlying questions are weak, the organisation may simply become
+      faster at moving in the wrong direction.
+    </p>
+
+    <p>
+      The real question is no longer whether a business can use AI. Most can.
+      The more interesting question is whether the business has redesigned
+      the way it makes decisions because AI exists.
+    </p>
+
+    <p>
+      Information is becoming cheaper. Judgment is not.
+    </p>
+
+    <p>
+      AI can surface patterns, compare options and reduce the time required
+      to process information. But someone still has to decide what matters,
+      what evidence is reliable, what assumptions are wrong and what action
+      should follow.
+    </p>
+
+    <p>
+      That is where competitive advantage begins to move.
+    </p>
+
+    <p>
+      It may come from asking better questions. It may come from having
+      better internal data. It may come from understanding customers more
+      deeply than competitors do. It may come from having processes that
+      allow useful information to reach the person making the decision
+      before the opportunity disappears.
+    </p>
+
+    <p>
+      Consider procurement. An organisation may have access to powerful
+      forecasting and analytics tools. But if supplier risk information is
+      fragmented, market signals arrive late and procurement decisions are
+      based mainly on historical assumptions, the technology has not solved
+      the real problem.
+    </p>
+
+    <p class="modal-question">
+      The advantage may not be who has the best AI. It may be who makes the
+      best decisions with the same AI everyone else can access.
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- ARTICLE 2 -->
+<div class="modal" id="article2">
+
+  <div class="modal-box">
+
+    <button
+      class="close"
+      onclick="closeArticle('article2')"
+    >
+      ×
+    </button>
+
+    <div class="category">
+      Operations
+    </div>
+
+    <h2>
+      Your Supply Chain Isn't Slow. Your Decisions Are.
+    </h2>
+
+    <p>
+      Supply chains are often described as unpredictable.
+    </p>
+
+    <p>
+      Sometimes they are. But many organisations discover their problems
+      late rather than experiencing them suddenly.
+    </p>
+
+    <p>
+      A supplier does not necessarily become risky overnight. A transport
+      route does not suddenly become inefficient without signals. A market
+      does not usually change without warning.
+    </p>
+
+    <p>
+      The signals often exist somewhere.
+    </p>
+
+    <p>
+      The problem is that they may be sitting with suppliers, drivers,
+      buyers, market participants or operational teams without reaching the
+      person who needs them early enough.
+    </p>
+
+    <p>
+      This creates a dangerous illusion: the supply chain appears slow when
+      the real delay happened in the decision process.
+    </p>
+
+    <p>
+      A supplier may still look attractive on price while transport costs
+      are increasing. A vendor may still meet yesterday's performance
+      standards while capacity is becoming constrained. A route may still
+      appear commercially viable while the conditions around it are changing.
+    </p>
+
+    <p>
+      Procurement therefore cannot be reduced to finding the cheapest
+      acceptable supplier.
+    </p>
+
+    <p>
+      The strategic question is increasingly about continuity: how early can
+      the organisation recognise a problem, and how quickly can it respond?
+    </p>
+
+    <p>
+      Technology can improve visibility, but only after the organisation
+      understands what it needs to see.
+    </p>
+
+    <p class="modal-question">
+      Sometimes the supply chain isn't slow. The decision simply arrived
+      late.
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- ARTICLE 3 -->
+<div class="modal" id="article3">
+
+  <div class="modal-box">
+
+    <button
+      class="close"
+      onclick="closeArticle('article3')"
+    >
+      ×
+    </button>
+
+    <div class="category">
+      GTM & B2B Growth
+    </div>
+
+    <h2>
+      Most Companies Don't Have a Lead Problem. They Have a Trust Problem.
+    </h2>
+
+    <p>
+      A company can have traffic, leads and a healthy-looking pipeline while
+      deals still refuse to move.
+    </p>
+
+    <p>
+      That is because attention and confidence are different things.
+    </p>
+
+    <p>
+      Buyers can discover a company quickly. They can read the website,
+      download the report and attend the webinar. None of that automatically
+      means they believe the company understands their problem.
+    </p>
+
+    <p>
+      B2B buying has become increasingly complicated. The person consuming
+      the content may not be the person signing the contract.
+    </p>
+
+    <p>
+      Finance may ask a different question from procurement. Operations may
+      have a different concern from the executive sponsor. Legal may
+      introduce another layer of uncertainty.
+    </p>
+
+    <p>
+      This is why generic content struggles.
+    </p>
+
+    <p>
+      A summary of industry trends may generate impressions. A useful point
+      of view can create confidence.
+    </p>
+
+    <p>
+      Thought leadership becomes valuable when it helps a buyer understand
+      something they were already struggling to articulate.
+    </p>
+
+    <p>
+      The strongest content doesn't simply say, "Here is what is happening."
+    </p>
+
+    <p>
+      It says, "Here is what this means for the decision you are trying to
+      make."
+    </p>
+
+    <p class="modal-question">
+      Attention gets you noticed. Trust gets you considered.
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- ARTICLE 4 -->
+<div class="modal" id="article4">
+
+  <div class="modal-box">
+
+    <button
+      class="close"
+      onclick="closeArticle('article4')"
+    >
+      ×
+    </button>
+
+    <div class="category">
+      Product & AI
+    </div>
+
+    <h2>
+      The AI Feature Nobody Asked For Is Usually the Feature That Gets Built.
+    </h2>
+
+    <p>
+      AI has made one part of product development increasingly exciting:
+      building things is getting easier.
+    </p>
+
+    <p>
+      But when building becomes cheaper, the cost of building the wrong thing
+      becomes easier to hide.
+    </p>
+
+    <p>
+      Teams can prototype an AI feature quickly. They can generate an
+      interface, connect a model and demonstrate something impressive before
+      the original problem has been properly understood.
+    </p>
+
+    <p>
+      The question changes from "Can we build it?" to "Should the customer
+      care?"
+    </p>
+
+    <p>
+      The best AI feature may not be the most visible one.
+    </p>
+
+    <p>
+      It may be something that removes a frustrating task, reduces cognitive
+      effort or quietly helps a customer reach an outcome faster.
+    </p>
+
+    <p>
+      Customers do not buy intelligence for its own sake. They buy progress.
+    </p>
+
+    <p>
+      This is why customer curiosity remains important even in an age of
+      rapid technical experimentation.
+    </p>
+
+    <p>
+      Before building another AI capability, product teams should ask what
+      problem disappears for the customer if the feature succeeds.
+    </p>
+
+    <p class="modal-question">
+      When building gets cheaper, judgment becomes more valuable.
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- ARTICLE 5 -->
+<div class="modal" id="article5">
+
+  <div class="modal-box">
+
+    <button
+      class="close"
+      onclick="closeArticle('article5')"
+    >
+      ×
+    </button>
+
+    <div class="category">
+      Executive Strategy
+    </div>
+
+    <h2>
+      The Most Expensive Business Decisions Are Often the Ones Nobody Thinks They Made.
+    </h2>
+
+    <p>
+      Not every expensive decision appears in a meeting.
+    </p>
+
+    <p>
+      Some happen through inaction.
+    </p>
+
+    <p>
+      A process continues because it has always existed. A supplier remains
+      because changing suppliers feels difficult. A product direction
+      survives because too much work has already gone into it.
+    </p>
+
+    <p>
+      Eventually, the organisation is living with a decision that nobody
+      remembers consciously making.
+    </p>
+
+    <p>
+      Familiarity can disguise risk.
+    </p>
+
+    <p>
+      This is where sunk-cost thinking becomes dangerous. The amount already
+      invested in something may explain why people hesitate to change it, but
+      it does not tell them what they should do next.
+    </p>
+
+    <p>
+      A better question is forward-looking:
+    </p>
+
+    <p>
+  If we were making this decision today, knowing what we know now, would
+  we choose the same direction?
+</p>
+
+<p>
+  The answer does not automatically mean the original decision was wrong.
+  It simply forces the organization to separate what still makes sense from
+  what is being protected because it is familiar.
+</p>
+
+<p>
+  Good decision-making is not about avoiding every mistake. It is about
+  creating enough clarity to recognize when a decision needs to change.
+</p>
+
+<p>
+  The organizations that do this well are not necessarily the ones that
+  make perfect decisions. They are the ones willing to question decisions
+  before those decisions become expensive habits.
+</p>
+
+<div class="article-source">
+  <strong>Key question:</strong>
+  What decision has your organization continued making simply because
+  nobody has stopped to question it?
+</div>
+</article>
+
+</div>
+</div>
+</div>
+
+<!-- =========================
+     APPROACH
+========================= -->
+
+<section class="section approach" id="approach">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">HOW I WORK</span>
+      <h2>
+        Good content starts before the writing.
+      </h2>
+      <p>
+        I start with the problem, not the word count. Then I research,
+        find the strongest angle and turn the idea into something people
+        actually want to read.
+      </p>
+    </div>
+
+    <div class="approach-grid">
+
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Understand</h3>
+        <p>
+          I get clear on the audience, objective, context and the real
+          problem behind the brief.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Research</h3>
+        <p>
+          I dig into the subject, evidence, market context and competing
+          ideas before deciding what the piece should say.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Find the Angle</h3>
+        <p>
+          Information is everywhere. The value is finding the perspective
+          that makes the reader stop, think and keep reading.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="num">04</div>
+        <h3>Write</h3>
+        <p>
+          The final piece should sound clear, natural and purposeful —
+          never like a collection of keywords written for an algorithm.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     AUDIENCE
+========================= -->
+
+<section class="section audience" id="audience">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">WHO I WRITE FOR</span>
+      <h2>
+        Content for people with something important to say.
+      </h2>
+    </div>
+
+    <div class="audience-grid">
+
+      <div class="audience-card">
+        <span>01</span>
+        <h3>Founders & Executives</h3>
+        <p>
+          Thought leadership, LinkedIn content and business storytelling
+          that turn experience and expertise into a clear public voice.
+        </p>
+      </div>
+
+      <div class="audience-card">
+        <span>02</span>
+        <h3>Startups & B2B Teams</h3>
+        <p>
+          Content that explains complicated products, builds trust and
+          gives prospects a reason to keep paying attention.
+        </p>
+      </div>
+
+      <div class="audience-card">
+        <span>03</span>
+        <h3>Brands & Agencies</h3>
+        <p>
+          Research-led articles, scripts, campaigns and business content
+          built around a clear idea rather than filler.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about" id="about">
+  <div class="container about-grid">
+
+    <div>
+      <span class="eyebrow">ABOUT THE WRITER</span>
+
+      <h2>
+        I write at the intersection of business reality, technology
+        and decision-making.
+      </h2>
+    </div>
+
+    <div class="about-copy">
+
+      <p>
+        Sanusi Okenyi is a business and content writer focused on the
+        decisions behind technology, growth and execution.
+      </p>
+
+      <p>
+        His work combines research, operational perspective and clear
+        storytelling to turn complex business questions into ideas that
+        executives, teams and customers can actually use.
+      </p>
+
+      <div class="skills">
+        <span>B2B CONTENT</span>
+        <span>THOUGHT LEADERSHIP</span>
+        <span>AI</span>
+        <span>GTM</span>
+        <span>BUSINESS STORYTELLING</span>
+        <span>OPERATIONS</span>
+        <span>PROCUREMENT</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="section cta" id="contact">
+  <div class="container cta-inner">
+
+    <span class="eyebrow">LET'S WORK TOGETHER</span>
+
+    <h2>
+      Have a business problem worth exploring?
+    </h2>
+
+    <p>
+      Bring the question. I'll do the research, find the angle and turn it
+      into something worth reading.
+    </p>
+
+    <a
+      class="btn btn-primary"
+      href="mailto:sanusiokenyi7@gmail.com"
+    >
+      LET'S TALK →
+    </a>
+
+    <p class="cta-email">
+      sanusiokenyi7@gmail.com
+    </p>
+
+  </div>
+</section>
+
 </main>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+  <div class="container footer-inner">
+
+    <div>
+      <strong>Sanusi Okenyi</strong>
+      <p>
+        LinkedIn Ghostwriter & Content Strategist
+      </p>
+    </div>
+
+    <div class="footer-links">
+
+      <a
+        href="https://www.linkedin.com/in/sanusi-okenyi-835b61422"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+      <a href="mailto:sanusiokenyi@gmail.com">
+        Email
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p>
+      © 2026 Sanusi Okenyi. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- =========================
+     ARTICLE MODALS
+========================= -->
+
+<div class="article-modal" id="article-ai" aria-hidden="true">
+  <div class="article-modal-overlay" onclick="closeArticle('article-ai')"></div>
+
+  <div class="article-modal-content">
+    <button
+      class="article-close"
+      onclick="closeArticle('article-ai')"
+      aria-label="Close article"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">AI & STRATEGY</span>
+
+    <h2>
+      AI Is Not Your Competitive Advantage.
+      The Decisions You Make With It Are.
+    </h2>
+
+    <p>
+      AI is becoming easier to access. The harder competitive advantage
+      is knowing what to do with it.
+    </p>
+
+    <p>
+      Give two companies access to the same AI tools and they can still
+      produce very different results. One uses AI to accelerate work that
+      already makes sense. The other uses it to accelerate decisions that
+      should have been questioned first.
+    </p>
+
+    <p>
+      That distinction matters.
+    </p>
+
+    <p>
+      Information is becoming cheaper. Judgment is not.
+    </p>
+
+    <p>
+      The organizations that create value from AI will not simply be the
+      ones using the most tools. They will be the ones asking better
+      questions before those tools are used.
+    </p>
+
+    <p>
+      In procurement, for example, AI can compare suppliers, identify
+      patterns and process large amounts of information quickly. But it
+      cannot remove the need to understand supplier reliability, market
+      conditions, operational risk or the consequences of a poor decision.
+    </p>
+
+    <p>
+      AI can make a bad process faster.
+      It can also make a good process dramatically better.
+    </p>
+
+    <p>
+      The competitive advantage is knowing the difference.
+    </p>
+  </div>
+</div>
+
+<div class="article-modal" id="article-supply" aria-hidden="true">
+  <div class="article-modal-overlay" onclick="closeArticle('article-supply')"></div>
+
+  <div class="article-modal-content">
+    <button
+      class="article-close"
+      onclick="closeArticle('article-supply')"
+      aria-label="Close article"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">OPERATIONS</span>
+
+    <h2>
+      Your Supply Chain Isn't Slow.
+      Your Decisions Are.
+    </h2>
+
+    <p>
+      Supply chain problems rarely appear out of nowhere.
+    </p>
+
+    <p>
+      A supplier misses a pattern before missing a delivery. A route
+      becomes less reliable before it becomes a crisis. Prices move before
+      procurement teams feel the full impact.
+    </p>
+
+    <p>
+      The information usually exists somewhere.
+    </p>
+
+    <p>
+      The problem is that organizations often discover it too late.
+    </p>
+
+    <p>
+      Visibility is therefore more than a reporting function. It creates
+      decision time.
+    </p>
+
+    <p>
+      The earlier a business can see a change, the more options it has.
+      It can negotiate, switch suppliers, adjust inventory, change routes
+      or redesign the process before the problem becomes expensive.
+    </p>
+
+    <p>
+      Procurement sits directly inside this decision chain.
+    </p>
+
+    <p>
+      It is not simply about finding a supplier and getting a price.
+      It is about understanding what could interrupt the business and
+      acting before that interruption becomes unavoidable.
+    </p>
+
+    <p>
+      A faster supply chain is useful.
+      A supply chain that gives decision-makers more time is even more
+      valuable.
+    </p>
+  </div>
+</div>
+
+<div class="article-modal" id="article-trust" aria-hidden="true">
+  <div class="article-modal-overlay" onclick="closeArticle('article-trust')"></div>
+
+  <div class="article-modal-content">
+    <button
+      class="article-close"
+      onclick="closeArticle('article-trust')"
+      aria-label="Close article"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">GTM & B2B GROWTH</span>
+
+    <h2>
+      Most Companies Don't Have a Lead Problem.
+      They Have a Trust Problem.
+    </h2>
+
+    <p>
+      Getting attention is easier than getting confidence.
+    </p>
+
+    <p>
+      A company can generate traffic, collect leads and publish content
+      every week while potential customers still hesitate to buy.
+    </p>
+
+    <p>
+      The reason is simple: B2B decisions carry risk.
+    </p>
+
+    <p>
+      Buyers are not only asking whether a product works. They are asking
+      whether the company understands their problem, whether the solution
+      will survive implementation and whether choosing it will create
+      another problem six months later.
+    </p>
+
+    <p>
+      That is where useful thought leadership matters.
+    </p>
+
+    <p>
+      Good thought leadership does not simply announce expertise.
+      It demonstrates how the company thinks.
+    </p>
+
+    <p>
+      It gives the reader a reason to believe that the people behind the
+      product understand the problem deeply enough to solve it.
+    </p>
+
+    <p>
+      Attention gets you noticed.
+      Trust gets you considered.
+    </p>
+  </div>
+</div>
+
+<div class="article-modal" id="article-product" aria-hidden="true">
+  <div class="article-modal-overlay" onclick="closeArticle('article-product')"></div>
+
+  <div class="article-modal-content">
+    <button
+      class="article-close"
+      onclick="closeArticle('article-product')"
+      aria-label="Close article"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">PRODUCT & AI</span>
+
+    <h2>
+      The AI Feature Nobody Asked For Is Usually the Feature That Gets Built.
+    </h2>
+
+    <p>
+      AI has made building faster.
+    </p>
+
+    <p>
+      That sounds like an advantage until a company realizes it can now
+      build the wrong thing faster than ever.
+    </p>
+
+    <p>
+      Product teams used to ask, "Can we build this?"
+    </p>
+
+    <p>
+      Increasingly, the more important question is,
+      "Should we build this?"
+    </p>
+
+    <p>
+      The difference is judgment.
+    </p>
+
+    <p>
+      A useful AI feature does not exist simply because the technology
+      makes it possible. It exists because it solves a real problem better,
+      faster or more naturally than the alternatives.
+    </p>
+
+    <p>
+      Sometimes the strongest AI feature is almost invisible to the user.
+      It removes friction without demanding attention.
+    </p>
+
+    <p>
+      Customers do not buy intelligence.
+      They buy progress.
+    </p>
+  </div>
+</div>
+
+<div class="article-modal" id="article-decisions" aria-hidden="true">
+  <div
+    class="article-modal-overlay"
+    onclick="closeArticle('article-decisions')"
+  ></div>
+
+  <div class="article-modal-content">
+    <button
+      class="article-close"
+      onclick="closeArticle('article-decisions')"
+      aria-label="Close article"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">EXECUTIVE STRATEGY</span>
+
+    <h2>
+      The Most Expensive Business Decisions Are Often the Ones Nobody Thinks
+      They Made.
+    </h2>
+
+    <p>
+      Some business decisions happen without anyone formally making them.
+    </p>
+
+    <p>
+      A process continues because it has always existed. A supplier remains
+      because changing suppliers feels risky. A product stays on the roadmap
+      because somebody approved it years ago.
+    </p>
+
+    <p>
+      Eventually, the organization forgets that these were decisions.
+    </p>
+
+    <p>
+      They become habits.
+    </p>
+
+    <p>
+      That is where hidden costs can grow.
+    </p>
+
+    <p>
+      Familiarity can make an option feel safer than it actually is.
+    </p>
+
+    <p>
+      One useful question is:
+    </p>
+
+    <p>
+      If we were making this decision today, knowing what we know now, would
+      we choose the same direction?
+    </p>
+
+    <p>
+      The answer does not automatically mean the original decision was wrong.
+      It simply forces the organization to separate what still makes sense
+      from what is being protected because it is familiar.
+    </p>
+
+    <p>
+      Good decision-making is not about avoiding every mistake. It is about
+      creating enough clarity to recognize when a decision needs to change.
+    </p>
+
+    <p>
+      The organizations that do this well are not necessarily the ones that
+      make perfect decisions. They are the ones willing to question decisions
+      before those decisions become expensive habits.
+    </p>
+
+    <div class="article-source">
+      <strong>Key question:</strong>
+      What decision has your organization continued making simply because
+      nobody has stopped to question it?
+    </div>
+  </div>
+</div>
+
+<script>
+  function openArticle(id) {
+    const modal = document.getElementById(id);
+
+    if (!modal) return;
+
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  function closeArticle(id) {
+    const modal = document.getElementById(id);
+
+    if (!modal) return;
+
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  document.querySelectorAll(".article-modal").forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        closeArticle(modal.id);
+      }
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      document.querySelectorAll(".article-modal.active").forEach((modal) => {
+        closeArticle(modal.id);
+      });
+    }
+  });
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+    });
+
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+        menuToggle.classList.remove("active");
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
-          
